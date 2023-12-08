@@ -1,0 +1,85 @@
+<!-- Práctica para la creación de Formularios con HTML y CSS-->
+<!DOCTYPE html>
+<html lang="es-VE">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Formulario</title>
+    <link rel="stylesheet" href="miestilo.css">
+    <style>
+        .cajainterna {
+             position: relative;
+             top: 10px;
+             left: 280px;
+             border-color: 3px solid black solid;
+        }
+    </style>
+  </head>
+  <body>
+    
+      <img src="imagenes/logoIUJO.png" alt="Logo oficial IUJO" width="200" height="100">
+      <h1>Elementos a utilizar en la Creación de Formularios</h1>
+      <!-- Inicio del formulario -->
+      <form action="" method="POST"> 
+        <div class="cajaprincipal">
+          <div class="cajainterna" >
+                  <label for="nombres" id="enombres"><strong>Nombres: </strong></label><br>
+                  <input type="text" id="nombres" name="primernombre" ><br>
+                  <label for="apellidos">Apellidos:</label><br>
+                  <input type="text" id="apellidos" name="apellidos" maxlength="30" size="15"><br>
+                  <label for="clave">Contraseña:</label><br>
+                  <input type="password" id="clave" name="clave" maxlength="20"><br>
+                  <label for="edad">Edad:</label><br>
+                  <input type="number" id="edad" name="edad" min="16" max="100" value="18"><br>
+                  <label for="cumple">Fecha de Nacimiento:</label><br>
+                  <input type="date" id="cumple" name="cumple"><br>
+                  <label for="direccion">Dirección de Residencia:</label><br>
+                  <textarea id="direccion" name="direccion" cols="50" rows="8"></textarea><br>
+                  <label for="email">Correo Electrónico:</label><br>
+                  <input type="email" id="email" name="email">    
+                  <br><br>
+
+                  <label for="lenguaje_fav">Seleccione su lenguaje favorito:</label><br>
+                  <!-- Botones de opción -->
+                  <input type="radio" id="html" name="lenguaje_fav" value="HTML">
+                  <label for="html">HTML</label><br>
+                  <input type="radio" id="css" name="lenguaje_fav" value="CSS"> CSS <br>
+                  <!-- <label for="css">CSS</label><br> -->
+                  <input type="radio" id="javascript" name="lenguaje_fav" value="JavaScript">
+                  <label for="javascript">JavaScript</label>    
+                  <br><br>
+
+                  <label for="transporte">Seleccione su Medio de Transporte favorito:</label> <br>
+                  <!-- Casillas de Verificación -->
+                  <input type="checkbox" id="vehiculo1" name="transporte1" value="Bicicleta">
+                  <label for="transporte1">Bicicleta</label><br>
+                  <input type="checkbox" id="transporte2" name="transporte2" value="Carro">
+                  <label for="transporte2">Carro</label><br>
+                  <input type="checkbox" id="transporte3" name="transporte3" value="Moto">
+                  <label for="transporte3">Moto</label>
+                  <br><br>
+
+                  <label for="estudio">Fabricante de carros:  </label>
+                   <!-- Lista desplegable -->
+                  <select id="carros" name="carros" size="1">
+                    <option value="Toyota">Toyota</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Honda">Honda</option>
+                  </select>
+                  <br><br>
+                  
+                  <label for="color_fav">Color favorito:  </label>
+                  <input type="color" id="color_fav" name="color_Fav">
+                  <br><br> 
+              </div> <!-- fin de caja interna-->
+        </div>  <!-- fin de caja -->
+          <br><br> <center>
+          <button type="button" id="uno"> <img src="imagenes/guardar.jpg"  height="30">Guardar</button>
+          <input type="button" id="dos" value="Actualizar">    
+          <button type="button" id="tres"  disabled> <strong> <i>Eliminar </i> </strong></button>
+          <button type="reset">Limpiar</button>  </center> 
+          <br><br>
+      </form> 
+  </body>
+</html>

@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    color:blue;
+    }
+    .cajaprincipal {
+        position: relative;
+        background-color: aquamarine;
+        width: 800px;
+        height: 800px;
+        left: 300px;
+        
+    }
+    #epnombre {
+        font-family: "verdana";
+        color: red;
+    }
+    #primernombre {
+        font-size: 20px;
+        color: red;
+    }
